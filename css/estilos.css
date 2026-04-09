@@ -1,0 +1,196 @@
+:root {
+    --color-primario: #1a4f8a;
+    --color-acento:   #e8a020;
+    --color-fondo:    #f8f9fa;
+    --fuente-titulo:  'Merriweather', Georgia, serif;
+    --fuente-cuerpo:  'Open Sans', sans-serif;
+}
+
+/* ── Base ── */
+body {
+    font-family: var(--fuente-cuerpo);
+    background-color: var(--color-fondo);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fuente-titulo);
+}
+
+/* ── Navbar ── */
+.navbar-brand {
+    font-family: var(--fuente-titulo);
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+}
+
+/* ── Hero Banner ── */
+.hero-banner {
+    position: relative;
+    min-height: 420px;
+    background: linear-gradient(135deg, #1a4f8a 0%, #0d2d52 60%, #1a4f8a 100%);
+    overflow: hidden;
+}
+
+.hero-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+/* ── Page header ── */
+.page-header {
+    background: linear-gradient(90deg, #1a4f8a, #0d2d52) !important;
+}
+
+/* ── Cards ── */
+.card {
+    transition: transform .25s ease, box-shadow .25s ease;
+    border: none;
+    border-radius: 12px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .12) !important;
+}
+
+.card-header {
+    border-radius: 12px 12px 0 0 !important;
+}
+
+/* ── Libro card ── */
+.libro-card .tipo-badge {
+    font-size: .7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.libro-card .precio {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-acento);
+}
+
+.libro-card .book-icon {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, var(--color-primario), #2a6fba);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+/* ── Autor card ── */
+.autor-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-primario), #2a6fba);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+/* ── Filtros / Search ── */
+.filtros-bar {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,.06);
+    margin-bottom: 2rem;
+}
+
+/* ── Estadísticas (index) ── */
+.stat-card {
+    border-left: 4px solid var(--color-acento);
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,.06);
+}
+
+.stat-card .stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-primario);
+    line-height: 1;
+}
+
+.stat-card .stat-icon {
+    font-size: 2rem;
+    opacity: .15;
+}
+
+/* ── Formulario de contacto ── */
+.contacto-card {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,.1);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--color-primario);
+    box-shadow: 0 0 0 .2rem rgba(26, 79, 138, .2);
+}
+
+/* ── Tabla ── */
+.table thead th {
+    background: var(--color-primario);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    font-size: .9rem;
+}
+
+.table-hover tbody tr:hover {
+    background: #eef4ff;
+}
+
+/* ── Footer ── */
+.footer a.hover-white:hover {
+    color: #fff !important;
+}
+
+/* ── Animaciones ── */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeInUp .7s ease both;
+}
+
+/* ── Spinner de búsqueda ── */
+#spinnerBusqueda {
+    display: none;
+}
+
+/* ── Alerta éxito contacto ── */
+#alertaExito {
+    display: none;
+}
+
+/* ── Responsivo ── */
+@media (max-width: 576px) {
+    .hero-banner { min-height: 300px; }
+    .stat-card .stat-number { font-size: 2rem; }
+}
