@@ -176,7 +176,7 @@ include 'includes/header.php';
                     <div class="card-body">
                         <i class="bi bi-telephone-fill text-primary fs-2 mb-2"></i>
                         <h6 class="fw-bold">Teléfono</h6>
-                        <p class="text-muted small mb-0">+1 (809) 000-0000</p>
+                        <p class="text-muted small mb-0">+1 (829) 568-6241</p>
                     </div>
                 </div>
             </div>
@@ -185,7 +185,7 @@ include 'includes/header.php';
                     <div class="card-body">
                         <i class="bi bi-envelope-fill text-primary fs-2 mb-2"></i>
                         <h6 class="fw-bold">Correo</h6>
-                        <p class="text-muted small mb-0">info@libreria.com</p>
+                        <p class="text-muted small mb-0">libreriaifo@do.com</p>
                     </div>
                 </div>
             </div>
