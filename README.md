@@ -47,18 +47,6 @@ Accede en: **http://localhost/libreria/**
 
 ---
 
-## Despliegue en hosting gratuito (InfinityFree / Byet / 000webhost)
-
-1. Registrarte en [infinityfree.net](https://infinityfree.net) u otro hosting gratuito PHP+MySQL.
-2. Crear una base de datos MySQL desde el panel de control.
-3. Importar `Base_Datos_Libreria.sql` vía **phpMyAdmin** del hosting.
-4. Actualizar `includes/conexion.php` con los datos del hosting (host, usuario, contraseña, nombre BD).
-5. Subir todos los archivos por FTP (FileZilla) a la carpeta `htdocs/`.
-
-##
-https://jaeljc.great-site.net
----
-
 ## Tecnologías utilizadas
 - **HTML5 / CSS3** — estructura y estilos base
 - **Bootstrap 5.3** — componentes responsivos y grid
@@ -85,3 +73,10 @@ https://jaeljc.great-site.net
 | 9 | Guardar formulario en tabla `contacto` | ✅ |
 | 10 | Conexiones y consultas con **PDO** | ✅ |
 | 11 | CSS y JavaScript aplicados | ✅ |
+
+---
+## ADICIONAL
+
+https://jaeljc.great-site.net
+
+---
