@@ -55,6 +55,8 @@ Accede en: **http://localhost/libreria/**
 4. Actualizar `includes/conexion.php` con los datos del hosting (host, usuario, contraseña, nombre BD).
 5. Subir todos los archivos por FTP (FileZilla) a la carpeta `htdocs/`.
 
+##
+https://jaeljc.great-site.net
 ---
 
 ## Tecnologías utilizadas
